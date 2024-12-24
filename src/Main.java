@@ -25,7 +25,7 @@ public class Main {
                 .filter(person -> person.getAge() > 18 && person.getAge() < 27)
                 .map(Person::getFamily)
                 .collect(Collectors.toList());
-        System.out.println("Количество призывников: " + conscript.size());
+        System.out.println("Количество призывников: " + conscript);
 
         List<Person> workable = persons.stream()
                 .filter(person -> person.getEducation() == Education.HIGHER)
